@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#213d39"><meta name="description" content="Sua companhia na vistoria do primeiro apartamento. Checklist por ambiente, fotos, anotações e relatório para guardar.">
+<title>Chave na mão · Vistoria do apartamento</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside class="sidebar">
+ <a class="brand" href="#inicio"><span class="brandmark" data-icon="key"></span><span>Chave na mão<small>SEU LAR, PASSO A PASSO</small></span></a>
+ <div class="navlabel">MINHA VISTORIA</div>
+ <nav aria-label="Navegação principal"><a href="#inicio" data-nav="inicio"><span data-icon="home"></span>Visão geral</a><a href="#checklist" data-nav="checklist"><span data-icon="list"></span>Checklist<span class="nav-count" id="nav-total"></span></a><a href="#pendencias" data-nav="pendencias"><span data-icon="flag"></span>Pendências<span class="nav-count" id="nav-issues">0</span></a><a href="#relatorio" data-nav="relatorio"><span data-icon="file"></span>Relatório</a></nav>
+ <div class="side-bottom"><div class="side-drawing" data-icon="house"></div><b>Uma nova fase começa aqui.</b><p>Observe com calma.<br>Um ambiente de cada vez.</p><button class="text-btn" data-action="help"><span data-icon="help"></span>Como usar este guia</button></div>
+</aside>
+<div class="workspace"><header class="topbar"><div class="mobile-brand"><span data-icon="key"></span><b>Chave na mão</b></div><div class="breadcrumb">Meu apartamento <span>/</span> <strong id="breadcrumb">Visão geral</strong></div><div class="save-state" id="save-state" role="status"><i></i>Preparando…</div></header><main id="app" tabindex="-1"></main><footer class="footer"><span>Feito para a conquista do seu lar.</span><button class="text-btn" data-action="help">Sobre o guia <span>↗</span></button></footer></div>
+<nav class="mobile-nav" aria-label="Navegação no celular"><a href="#inicio" data-nav="inicio"><span data-icon="home"></span>Início</a><a href="#checklist" data-nav="checklist"><span data-icon="list"></span>Checklist</a><a href="#pendencias" data-nav="pendencias"><span data-icon="flag"></span>Pendências</a><a href="#relatorio" data-nav="relatorio"><span data-icon="file"></span>Relatório</a></nav>
+<dialog id="modal"><div id="modal-content"></div></dialog><div class="toast" id="toast" role="status"></div>
+<script src="app.js"></script>
+</body></html>
